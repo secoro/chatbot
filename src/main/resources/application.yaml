@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: chatbot
+  ai:
+    vectorstore:
+      cosmosdb:
+        endpoint: https://smym-cosmos.documents.azure.com:443/
+    openai:
+      chat:
+        options:
+          model: gpt-3.5-turbo
+      embedding:
+        options:
+          model: text-embedding-3-small
